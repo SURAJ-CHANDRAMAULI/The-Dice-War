@@ -59,14 +59,30 @@ if (point1 > point2) {
 else if (point2 > point1) {
   document.querySelector("h3").innerHTML = Fname +" Winning!";
   document.querySelector("#totalpoint2").innerHTML="Total Points = "+point2+"🚩";
-   
+
 }
 else {
   document.querySelector("h3").innerHTML = "Draw";
-   
+
 }
 
 document.querySelector("h5").innerHTML="Total rounds = "+count+"";
 
 
 }
+
+$(document).ready(function() {
+
+  var audio  = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3');
+  var audio2 = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/clickUp.mp3')
+
+  $(".button").mousedown(function() {
+    audio2.load();
+    audio2.play();
+  });
+
+  $(".button").mouseup(function() {
+    audio.load();
+    audio.play();
+  });
+});
