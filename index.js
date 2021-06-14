@@ -44,7 +44,10 @@ else if (randomNumber2 > randomNumber1) {
   document.querySelector("#thisround").innerHTML = "Winner of this round is "+Fname+" 😎";
 }
 else {
-  document.querySelector("h4").innerHTML = "It's Draw!";
+  document.querySelector("#thisround").innerHTML = "It's Draw!";
+  document.querySelector("#emoji1").innerHTML="😃";
+    document.querySelector("#emoji2").innerHTML="😃";
+
 }
 
 document.querySelector("#totalpoint1").innerHTML="Total Points = "+point1+"";
