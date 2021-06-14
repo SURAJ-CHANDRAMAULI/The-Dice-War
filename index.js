@@ -52,13 +52,17 @@ document.querySelector("#totalpoint2").innerHTML="Total Points = "+point2+"";
 
 
 if (point1 > point2) {
-  document.querySelector("h3").innerHTML = "🚩"+Uname+" Winning!";
+  document.querySelector("h3").innerHTML = Uname+" Winning!";
+  document.querySelector("flag1").innerHTML = "🚩";
 }
 else if (point2 > point1) {
-  document.querySelector("h3").innerHTML = Fname +" Winning! 🚩";
+  document.querySelector("h3").innerHTML = Fname +" Winning!";
+    document.querySelector("flag2").innerHTML = "🚩";
 }
 else {
-  document.querySelector("h3").innerHTML = "🚩Draw!🚩";
+  document.querySelector("h3").innerHTML = "Draw";
+    document.querySelector("flag1").innerHTML = "🚩";
+    document.querySelector("flag2").innerHTML = "🚩";
 }
 
 document.querySelector("h5").innerHTML="Total rounds = "+count+"";
